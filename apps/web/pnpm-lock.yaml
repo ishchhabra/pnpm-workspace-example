@@ -18,7 +18,7 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
     dependenciesMeta:
-      '@packages/shared':
+      '@packages/ui':
         injected: true
     devDependencies:
       '@eslint/eslintrc':
@@ -29,7 +29,7 @@ importers:
         version: 15.3.5
       '@packages/ui':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: file:../../packages/ui(react@19.1.0)
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.11
@@ -350,6 +350,11 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@packages/ui@file:../../packages/ui':
+    resolution: {directory: ../../packages/ui, type: directory}
+    peerDependencies:
+      react: ^19.1.0
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -2123,6 +2128,10 @@ snapshots:
       fastq: 1.19.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@packages/ui@file:../../packages/ui(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
 
   '@rtsao/scc@1.1.0': {}
 
