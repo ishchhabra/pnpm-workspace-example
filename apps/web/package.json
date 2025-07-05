@@ -9,7 +9,8 @@
     "lint": "eslint --max-warnings=0",
     "format": "prettier --write",
     "format-check": "prettier --check",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "sync": "pnpm sync-dependencies-meta-injected"
   },
   "dependencies": {
     "next": "15.3.5",
