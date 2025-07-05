@@ -29,7 +29,6 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <Link
             variant="primary"
-            size="large"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             external
           >
@@ -46,7 +45,6 @@ export default function Home() {
           </Link>
           <Link
             variant="secondary"
-            size="large"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             external
           >

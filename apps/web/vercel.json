@@ -2,4 +2,4 @@
   "installCommand": "pnpm install -w --filter web...",
   "buildCommand": "pnpm build",
   "framework": "nextjs"
-} 
+}
