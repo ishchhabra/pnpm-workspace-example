@@ -1,5 +1,5 @@
 {
-  "installCommand": "pnpm install -w --filter web...",
-  "buildCommand": "pnpm build",
+  "installCommand": "echo '=== BEFORE INSTALL ===' && pwd && ../../debug-pnpm.sh && echo '=== INSTALLING ===' && pnpm install -w --filter web... && echo '=== AFTER INSTALL ===' && ../../debug-pnpm.sh",
+  "buildCommand": "echo '=== BEFORE BUILD ===' && ../../debug-pnpm.sh && echo '=== BUILDING ===' && pnpm build && echo '=== AFTER BUILD ===' && ../../debug-pnpm.sh",
   "framework": "nextjs"
 }
