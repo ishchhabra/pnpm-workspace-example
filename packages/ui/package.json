@@ -27,7 +27,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@types/react": "^18 || ^19",
     "eslint": "^9.30.1",
